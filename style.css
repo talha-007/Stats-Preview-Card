@@ -1,0 +1,118 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: #fff;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 60rem;
+    height: 22rem;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+    border-radius: .55rem;
+}
+.card .top{
+    display: none;
+}
+.card .left{
+    width: 52%;
+    padding: 0rem 4rem;
+}
+.card .left .content .heading{
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    margin-bottom: 3.5rem;
+}
+.card .left .content .heading h1{
+    font-size: 2.2rem;
+}
+.card .left .content .heading h1 span{
+    color: hsl(277, 64%, 61%);
+}
+.card .left .content .heading p{
+    line-height: 1.5rem;
+    font-size: 1rem;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.card .left .content .stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20rem;
+}
+.card .left .content .stats h1{
+    font-size: 1.3rem;
+}
+.card .left .content .stats p{
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: .75rem;
+    margin-top: .15rem;
+}
+
+.card .right{
+    width: 48%;
+}
+.right img{
+    width: 100%;
+}
+
+
+@media (max-width:768px){
+    main{
+        height: 100%;
+    }
+    .card{
+        width: 22rem;
+        height: 55rem;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        gap: 3rem;
+        text-align: center;
+        margin: 2rem 1rem;
+    }
+    .card .top{
+        display: block;
+    }
+    .card .top img{
+        width: 100%;
+    }
+    .card .left{
+        width: 100%;
+        padding: 0rem 2rem;
+    }
+    .card .left .content .heading h1{
+        font-size: 1.8rem;
+    }
+    .card .left .content .heading p{
+        line-height: 1.5rem;
+        font-size: 1.1rem;
+        font-weight: 200;
+    }
+    .card .left .content .stats{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: center;
+        width: 100%;
+        gap: 3rem;
+    }
+    .card .right{
+        display: none;
+    }
+
+}
