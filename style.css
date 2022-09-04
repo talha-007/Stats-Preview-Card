@@ -15,7 +15,7 @@ main{
 }
 .card{
     width: 60rem;
-    height: 22rem;
+    height: 23.5rem;
     background-color: hsl(244, 38%, 16%);
     display: flex;
     justify-content: space-between;
@@ -64,11 +64,25 @@ main{
 }
 
 .card .right{
-    width: 48%;
+    height: 100%;
 }
 .right img{
     width: 100%;
+    height: 100%;
 }
+.right .overlay-desk{
+    mix-blend-mode:multiply;
+    width: 28.8rem;
+    height: 23.5rem;
+    background-color:hsl(277, 64%, 61%);
+    position: absolute;
+    top: 26.4%;
+    border-radius: 0rem 0.55rem 0.55rem 0rem;
+}
+.overlay-mob{
+    display: none;
+}
+
 
 
 @media (max-width:768px){
@@ -90,6 +104,16 @@ main{
     }
     .card .top img{
         width: 100%;
+    }
+    .card .top .overlay-mob{
+        display: block;
+        mix-blend-mode: multiply;
+        width: 22rem;
+        height: 16.2rem;
+        background-color: hsl(277, 64%, 61%);
+        top: 4.4%;
+        border-radius: 0.55rem 0.55rem 0rem 0rem;
+        position: absolute;
     }
     .card .left{
         width: 100%;
@@ -114,5 +138,18 @@ main{
     .card .right{
         display: none;
     }
+    
 
+}
+@media (max-width:375px){
+    .card .top .overlay-mob{
+        display: block;
+        mix-blend-mode: multiply;
+        width: 20.4rem;
+        height: 15rem;
+        background-color: hsl(277, 64%, 61%);
+        top: 4.4%;
+        border-radius: 0.55rem 0.55rem 0rem 0rem;
+        position: absolute;
+    }
 }
