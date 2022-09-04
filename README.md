@@ -24,7 +24,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [ solution URL ](https://github.com/talha-007/Stats-Preview-Card)
-- Live Site URL: [live site URL ](https://your-live-site-url.com)
+- Live Site URL: [live site URL ](https://talha-007.github.io/Stats-Preview-Card/)
 
 
 ### Built with
